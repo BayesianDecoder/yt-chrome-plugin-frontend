@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const outputDiv = document.getElementById("output");
     const API_KEY = 'AIzaSyBWHxzkGVXg3gn5hO5lDb9PJjxXRMn86c4';  // Replace with your actual YouTube Data API key
-    const API_URL = 'http://localhost:5000/predict';
+    const API_URL = 'http://my-elb-649472876.eu-north-1.elb.amazonaws.com:80/predict';
   
     // Get the current tab's URL
     chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
